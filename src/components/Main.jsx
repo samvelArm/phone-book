@@ -8,6 +8,10 @@ import ErrorMessage from './ErrorMessage/index';
 import Content from './Content/index';
 import {getRecordsData} from "../redux/actions/records-async-actions";
 
+import {
+  PageHeader
+} from "react-bootstrap";
+
 class Main extends React.Component {
   constructor() {
     super();
@@ -21,7 +25,7 @@ class Main extends React.Component {
     const { data } = this.props;
     return (
       <div className="phone-book">
-        <h1>Phone Book</h1>
+        <PageHeader>Phone Book</PageHeader>
         <Content data={data}/>
         {this.props.errorMessage !== '' && <ErrorMessage errorMessage={this.props.errorMessage}/>}
       </div>

@@ -1,7 +1,7 @@
 export const getRandomData = () => {
     let array = [];
 
-    for (let i=0; i< getRandomInt(10, 100); i++) {
+    for (let i=0; i< getRandomInt(10, 1000); i++) {
         array.push({
             firstName: getRandomString(),
             lastName: getRandomString(),
